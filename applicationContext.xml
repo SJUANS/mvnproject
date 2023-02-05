@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!-- 스프링 스키마 -->
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-    <!-- 스프링 스키마 -->
+<!--    같은 인터페이스 구현한 의존 오브젝트 여러 개 정의해두고 원하는 것 골라서 DI할 때 예시 코드-->
+<!--    <bean id="testBeanName" class="package.domain.testBeanName" />-->
     <bean id="beanName" class="package.domain.ClassBeanName">
         <property name="beanName" ref="beanName" />
     </bean>
