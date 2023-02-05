@@ -6,7 +6,7 @@
        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 <!--    같은 인터페이스 구현한 의존 오브젝트 여러 개 정의해두고 원하는 것 골라서 DI할 때 예시 코드-->
 <!--    <bean id="testBeanName" class="package.domain.testBeanName" />-->
-    <bean id="beanName" class="package.domain.ClassBeanName">
-        <property name="beanName" ref="beanName" />
+    <bean id="userDto" class="package.domain.UserDto">
+        <property name="connectionMaker" ref="connectionMaker" />
     </bean>
 </beans>
